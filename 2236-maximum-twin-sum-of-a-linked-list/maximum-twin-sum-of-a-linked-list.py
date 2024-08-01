@@ -9,22 +9,17 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: int
         """
-        # Step 1: Find the middle of the linked list
-        slow, fast = head, head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+        slow,fast=head,head
+        while fast and fast.next:#MIDDLE
+            slow,fast=slow.next,fast.next.next
         
-        # Step 2: Reverse the second half of the linked list
-        prev = None
-        current = slow
-        while current:
-            next_node = current.next
-            current.next = prev
-            prev = current
-            current = next_node
-        
-        # Step 3: Calculate the twin sum and find the maximum
+        prev=None
+        current=slow
+        while current:#reverse
+            next_node=current.next
+            current.next=prev
+            prev=current
+            current=next_node
         max_sum = 0
         first_half, second_half = head, prev
         while second_half:
