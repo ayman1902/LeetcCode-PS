@@ -13,8 +13,7 @@ class Solution(object):
 
         res=[0]*(n+1)
         for i in range(n+1):
-        #    res[i]=bit(i)
-            res[i]=res[i>>1] + i%2
-            print(res[i>>1] + i%2)
+            res[i]=bit(i)
+        # res[i]=res[i>>1] + i%2
 
         return res
