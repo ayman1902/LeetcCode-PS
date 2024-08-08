@@ -13,7 +13,7 @@ class Solution(object):
         if not root:
             return []
         res=[]
-        queue = [root]
+        queue = [root]#initlise a queue
         while queue:
             level_size=len(queue)
             level_arr=[]
