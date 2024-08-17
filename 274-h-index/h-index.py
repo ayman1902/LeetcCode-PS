@@ -13,5 +13,3 @@ class Solution(object):
             else:
                 break
         return h
-
-        return 2
