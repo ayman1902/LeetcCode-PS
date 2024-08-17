@@ -5,7 +5,6 @@ class Solution(object):
         :rtype: int
         """
         citations.sort(reverse=True)
-        print(citations)
         n=len(citations)
         h=0
         for i in range(n):
