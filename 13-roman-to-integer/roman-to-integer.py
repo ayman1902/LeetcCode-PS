@@ -14,13 +14,10 @@ class Solution(object):
             "D":500,
             "M":1000
         }
-        print(hashmap)
         for i in range(len(s)-1,-1,-1):
             current_value=hashmap[s[i]]
             if i+1<len(s) and current_value<hashmap[s[i+1]]:
                 res-=current_value
             else:
                 res+=current_value
-            print(current_value)
-            
         return res
