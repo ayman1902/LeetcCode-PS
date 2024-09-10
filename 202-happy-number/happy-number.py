@@ -4,12 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        seen=set()
+        seeen=set()
         def nextHappyNumber(n):
             return sum([int(digits)**2 for digits in str(n)])
         
-        while n not in seen and n!=1:
-            seen.add(n)
+        while n not in seeen and n!=1:
+            seeen.add(n)
             n=nextHappyNumber(n)
         return n==1
         
