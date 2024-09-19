@@ -4,6 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        #you can use math with formula of the sum of k for k in intervalle
         nums.sort()
         n=len(nums)
         if nums[0]!=0:
