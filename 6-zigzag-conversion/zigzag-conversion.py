@@ -23,9 +23,6 @@ class Solution(object):
                 going_down=True
             if index==1:
                 going_down=False
-            print(track_matrix[i],going_down, index,numRows)
-        print(track_matrix)
-        print(hashmap)
         result = ''.join(hashmap[i] for i in hashmap)
         return result
         
