@@ -5,11 +5,8 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        n=len(s)
-        if n==1:
-            return s
         index=1
-        track_matrix=[[s[i],0] for i in range(n)]
+        track_matrix=[[s[i],0] for i in range(len(s))]
         going_down=False
         hashmap=defaultdict(str)
         for i in range(len(track_matrix)):
