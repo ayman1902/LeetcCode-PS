@@ -16,9 +16,6 @@ class Solution(object):
 
                 li+=1
                 rj-=1
-        # Reverse the entire array
         swaping(nums, 0, len(nums) - 1)
-        # Reverse the first k elements
         swaping(nums, 0, k - 1)
-        # Reverse the remaining n-k elements
         swaping(nums, k, len(nums) - 1)
