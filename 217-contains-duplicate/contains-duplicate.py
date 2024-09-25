@@ -7,4 +7,7 @@ class Solution(object):
         hashmap=defaultdict(int)
         for i in range(len(nums)):
             hashmap[nums[i]]+=1
-        return any(e > 1 for e in hashmap.values())
+            if hashmap[nums[i]] >1:
+                return True
+        return False
+        #return any(e > 1 for e in hashmap.values())
