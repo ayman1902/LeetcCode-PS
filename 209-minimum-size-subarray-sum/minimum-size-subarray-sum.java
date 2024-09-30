@@ -16,7 +16,6 @@ class Solution {
                 count-=nums[start];
                 start++;
             }
-            System.out.println(end-start);
         }
         if(Double.isInfinite(min_lenght)==true){
             return 0;
