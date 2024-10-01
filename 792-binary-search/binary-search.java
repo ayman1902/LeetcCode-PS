@@ -3,10 +3,8 @@ class Solution {
         int start=0;
         int end=nums.length;
         int med=0;
-        System.out.println(start+" "+end+" "+target);
         while(start<end){
             med=(start+end)/2;
-            System.out.println(med+" "+nums[med]);
             if(nums[med]==target){
                 return med;
             }
