@@ -2,7 +2,6 @@ class Solution {
     public void rotate(int[][] matrix) {
         //first the transposé
         int temp=0;
-        System.out.println(Arrays.deepToString(matrix));
         for(int i=0;i<matrix.length;i++){
             for(int j=i;j<matrix[0].length;j++){
                 temp=matrix[i][j];
@@ -13,9 +12,7 @@ class Solution {
         //reverse each aray
         for(int k=0;k<matrix.length;k++){
             reverseArray(matrix[k]);
-
         }
-        System.out.println(Arrays.deepToString(matrix));
     }
     public static void reverseArray(int[] array){
         int temp=0;
