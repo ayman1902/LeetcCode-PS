@@ -16,7 +16,6 @@ class Solution {
         for(int j=min_length;j<bigWord.length();j++){
             merged.append(bigWord.charAt(j));
         }
-        System.out.println(merged);
         return merged.toString();
         
     }
