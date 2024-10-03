@@ -12,7 +12,6 @@ class Solution {
             current_max-=nums[j-k];
             max_avg=Math.max(max_avg,(double) current_max/k);
         }
-        System.out.println(current_max+" "+max_avg);
         return max_avg;
     }
 }
