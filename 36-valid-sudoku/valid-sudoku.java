@@ -46,10 +46,7 @@ class Solution {
                     }
                 }
         }
-
-            System.out.println(Arrays.toString(box));
         }
-        System.out.println(Arrays.deepToString(starts));
         return true;
     }
 }
