@@ -38,9 +38,7 @@ class Solution {
                 }
 
             }
-            System.out.println(nums[i]);
         }
-        System.out.println(Arrays.toString(nums));
         return res;
         
     }
