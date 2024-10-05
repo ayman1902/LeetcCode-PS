@@ -14,10 +14,8 @@ class Solution {
                     next_num+=1;
                 }
                 longest=Math.max(longest,length);
-                System.out.println(num);
             }
         }
-        System.out.println(set.toString());
         return longest;
         
     }
