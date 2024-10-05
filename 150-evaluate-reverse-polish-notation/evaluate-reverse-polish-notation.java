@@ -25,8 +25,6 @@ class Solution {
             }
             
         }
-
-        System.out.println(stack.toString());
         return stack.pop();
     }
 }
