@@ -21,8 +21,6 @@ class Solution {
                  return true;
             }
         }
-        System.out.println(Arrays.toString(s1_count));
-        System.out.println(Arrays.toString(s2_count));
         return false;
         
     }
