@@ -9,8 +9,6 @@ class Solution {
         }
         int low=0;
         int hight=phraseAfterModif.length() - 1;
-        System.out.println(phraseAfterModif.toString()+" "+low+" "+hight);
-
         while(low<hight){
             if(phraseAfterModif.charAt(low)!=phraseAfterModif.charAt(hight)){
                 return false;
@@ -18,8 +16,6 @@ class Solution {
             low++;
             hight--;
         }
-        
-        System.out.println(phraseAfterModif.toString()+" "+low+" "+hight);
         return true;
     }
 }
