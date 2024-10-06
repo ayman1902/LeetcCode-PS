@@ -1,6 +1,5 @@
 class Solution {
     public int majorityElement(int[] nums) {
-        int maj=0;
         int lim=(int) nums.length/2;
         HashMap<Integer,Integer> map =new HashMap<>();
         for(int num:nums){
@@ -11,7 +10,6 @@ class Solution {
                 return key;
             }
         }
-        System.out.println(map.toString()+" "+lim);
-        return maj;
+        return -1;
     }
 }
