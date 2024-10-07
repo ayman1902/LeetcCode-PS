@@ -17,7 +17,6 @@ class Solution {
                 stack.pop();
             }
             else{
-                System.out.println(op);
                 stack.push(Integer.parseInt(op));
             }
         }
