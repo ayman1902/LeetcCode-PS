@@ -6,9 +6,8 @@ class Solution {
             if(op.equals("+")){
                 int a=stack.pop();
                 int b=stack.peek();
-                int c=a+b;
                 stack.push(a);
-                stack.push(c);
+                stack.push(a+b);
             }
             else if(op.equals("D")){
                 stack.push(2*stack.peek());
