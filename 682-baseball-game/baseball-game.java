@@ -21,8 +21,8 @@ class Solution {
                 stack.push(Integer.parseInt(op));
             }
         }
-        for(int item:stack){
-            res+=item;
+        while(!stack.isEmpty()){
+            res+=stack.pop();
         }
         return res;
     }
