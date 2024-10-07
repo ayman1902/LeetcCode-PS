@@ -1,5 +1,6 @@
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
+        //b
         int res=0;
         HashMap<Character,Integer> mapStones=new HashMap<>();
         for(char c:stones.toCharArray()){
