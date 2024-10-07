@@ -5,9 +5,8 @@ class Solution {
         for(String op:operations){
             if(op.equals("+")){
                 int a=stack.pop();
-                int b=stack.pop();
+                int b=stack.peek();
                 int c=a+b;
-                stack.push(b);
                 stack.push(a);
                 stack.push(c);
             }
