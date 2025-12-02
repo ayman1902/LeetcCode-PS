@@ -5,6 +5,7 @@ class Solution(object):
         :type amount: int
         :rtype: int
         """
+        # 0(len(coins)*amount)
         dp = [float('inf')]*(amount+1)
         dp[0] = 0
         for i in range(amount+1):
